@@ -20,4 +20,3 @@ spec:
   sessionAffinity: None
   selector:
     app: hello-app
-    deployment: hello-app
