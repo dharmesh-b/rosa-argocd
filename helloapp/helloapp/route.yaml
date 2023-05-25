@@ -3,7 +3,6 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: hello-app
   namespace: hello-app
-
 spec:
   host: hello-app.hello-app.apps.db-rosa-test1.w16p.p1.openshiftapps.com
   to:
@@ -14,4 +13,6 @@ spec:
     targetPort: port-1
   tls:
     termination: edge
+    name: hello-app
+    weight: 100
   wildcardPolicy: None
