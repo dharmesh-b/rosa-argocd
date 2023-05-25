@@ -10,7 +10,7 @@ spec:
     - name: part-1
       protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 8080
     - name: part-2
       protocol: TCP
       port: 8888
