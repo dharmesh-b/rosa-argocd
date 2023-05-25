@@ -14,8 +14,6 @@ spec:
       port: 8888
       targetPort: 8888
   internalTrafficPolicy: Cluster
-  clusterIPs:
-    - 172.30.181.233
   type: ClusterIP
   ipFamilyPolicy: SingleStack
   sessionAffinity: None
