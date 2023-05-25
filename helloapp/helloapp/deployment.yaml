@@ -13,7 +13,6 @@ spec:
       labels:
         app: hello-app
     spec:
-    
       containers:
       - name: hello-openshift
         image: "docker.io/openshift/hello-openshift"
@@ -22,6 +21,13 @@ spec:
           protocol: TCP
         - containerPort: 8888
           protocol: TCP
+        resources:
+            limits:
+              cpu: 40m
+              memory: 150Mi
+            requests:
+              cpu: 20m
+              memory: 50Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
