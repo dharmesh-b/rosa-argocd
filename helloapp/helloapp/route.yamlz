@@ -10,9 +10,7 @@ spec:
   port:
     targetPort: port-1
   tls:
-    name: hello-app
     termination: edge
-    weight: 100
   to:
     kind: Service
     name: hello-app
