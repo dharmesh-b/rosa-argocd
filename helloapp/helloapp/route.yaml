@@ -5,7 +5,7 @@ metadata:
   namespace: hello-app
 
 spec:
-  host: hello-app-apps.db-rosa-test1.w16p.p1.openshiftapps.com
+  host: hello-app.hello-app.apps.db-rosa-test1.w16p.p1.openshiftapps.com
   to:
     kind: Service
     name: hello-app
