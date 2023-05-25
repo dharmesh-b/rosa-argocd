@@ -11,8 +11,9 @@ spec:
   template:
     metadata:
       labels:
-        app: hello-app
-    containers:
+        app: nodeselector-app
+    spec:
+      containers:
       - name: hello-openshift
         image: "docker.io/openshift/hello-openshift"
         ports:
