@@ -16,3 +16,9 @@ spec:
       protocol: TCP
       port: 8888
       targetPort: 8888
+  internalTrafficPolicy: Cluster
+  type: ClusterIP
+  sessionAffinity: None
+  selector:
+    app: hello-app
+    deployment: hello-app
