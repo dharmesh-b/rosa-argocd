@@ -11,8 +11,9 @@ spec:
   template:
     metadata:
       labels:
-        app: nodeselector-app
+        app: hello-app
     spec:
+    
       containers:
       - name: hello-openshift
         image: "docker.io/openshift/hello-openshift"
