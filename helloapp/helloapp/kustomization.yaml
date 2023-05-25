@@ -5,3 +5,4 @@ resources:
   - deployment.yaml
   - route.yaml
   - service.yaml
+  - hpa.yaml
